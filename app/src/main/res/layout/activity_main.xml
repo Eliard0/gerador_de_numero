@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBase"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_bemVindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem Vindo(a)"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <TextView
+        android:id="@+id/tv_ao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ao"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_bemVindo"
+        app:layout_constraintStart_toStartOf="@+id/tv_bemVindo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bemVindo" />
+
+    <TextView
+    android:id="@+id/tv_geradorDeNumero"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Gerador de Números"
+    android:textAlignment="center"
+    android:textSize="40sp"
+    app:layout_constraintEnd_toEndOf="@+id/tv_ao"
+    app:layout_constraintStart_toStartOf="@+id/tv_ao"
+    app:layout_constraintTop_toBottomOf="@+id/tv_ao" />
+
+    <Button
+        android:id="@+id/bt_inicia"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24sp"
+        android:backgroundTint="@color/colorBaseButton"
+        android:text="Entrar"
+        app:layout_constraintEnd_toEndOf="@+id/tv_ao"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/tv_ao"
+        app:layout_constraintTop_toBottomOf="@+id/tv_geradorDeNumero" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

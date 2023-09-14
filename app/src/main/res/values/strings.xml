@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gerador de Número</string>
+    <string name="gerar_numero">Sortear Número</string>
+    <string name="sortear_numero">Sortear 1 número</string>
+</resources>
