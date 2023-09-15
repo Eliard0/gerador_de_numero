@@ -3,8 +3,8 @@ package dev.user.sorteio
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 import dev.user.sorteio.databinding.ActivityHomeBinding
 import kotlin.math.roundToInt
 
@@ -48,10 +48,10 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
                 intent.putExtra("numeroAleatorio", numeroAleatorio.roundToInt().toString())
                 startActivity(intent)
             }else{
-                Toast.makeText(this, "O segundo número não pode menor ou igual o primeiro", Toast.LENGTH_LONG).show()
+                Snackbar.make(binding.layoutRoot, getString(R.string.instrucao_um), Snackbar.LENGTH_LONG).show()
             }
         } else {
-            Toast.makeText(this, "Digite dois números", Toast.LENGTH_LONG).show()
+            Snackbar.make(binding.layoutRoot, getString(R.string.instrucao_dois), Snackbar.LENGTH_LONG).show()
         }
     }
 }
