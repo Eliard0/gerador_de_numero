@@ -5,5 +5,5 @@
     <string name="parabens">Parabéns</string>
     <string name="frase_numero_sorteado">O número sorteado foi:</string>
     <string name="instrucao_um">O segundo número não pode ser menor ou igual o primeiro</string>
-    <string name="instrucao_dois">Digite dois números</string>
+    <string name="instrucao_dois">Digite os dois números</string>
 </resources>
