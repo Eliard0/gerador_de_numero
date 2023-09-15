@@ -2,4 +2,6 @@
 <resources>
     <string name="gerar_numero">Sortear Número</string>
     <string name="sortear_numero">Sortear 1 número</string>
+    <string name="parabens">Parabéns</string>
+    <string name="frase_numero_sorteado">O número sorteado foi:</string>
 </resources>

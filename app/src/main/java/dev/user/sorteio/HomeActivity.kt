@@ -1,5 +1,6 @@
 package dev.user.sorteio
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -40,15 +41,17 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
             var min = binding.editTextInicio.text.toString().toInt()
             var max = binding.editTextFim.text.toString().toInt()
 
-            if(min != 0 && max != 0) {
-                var numeroAleatorio = Math.random() * ((max - min) + 1)
+            if(min >= 0 && max > min) {
+                var numeroAleatorio = Math.random() * (max - min)
 
-                binding.aleatorio.text = "numero aleatorio ${numeroAleatorio.roundToInt()}"
+                val intent = Intent(this, NumberDrawn::class.java)
+                intent.putExtra("numeroAleatorio", numeroAleatorio.roundToInt().toString())
+                startActivity(intent)
             }else{
-                Toast.makeText(this, "Os dois números tem que ser diferente de 0", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "O segundo número não pode menor ou igual o primeiro", Toast.LENGTH_LONG).show()
             }
         } else {
-            Toast.makeText(this, "Algo deu errado", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Digite dois números", Toast.LENGTH_LONG).show()
         }
     }
 }

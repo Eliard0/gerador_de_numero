@@ -29,7 +29,7 @@
         android:ems="10"
         android:hint="De"
         android:inputType="number"
-        android:maxLength="2"
+        android:maxLength="3"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -45,7 +45,7 @@
         android:ems="10"
         android:hint="Ate"
         android:inputType="number"
-        android:maxLength="2"
+        android:maxLength="3"
         android:textAlignment="center"
         android:textColor="#0B0A0A"
         android:textStyle="bold"
@@ -63,16 +63,6 @@
         app:layout_constraintEnd_toEndOf="@+id/editText_fim"
         app:layout_constraintStart_toStartOf="@+id/editText_inicio"
         app:layout_constraintTop_toBottomOf="@+id/editText_fim" />
-
-    <TextView
-        android:id="@+id/aleatorio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/bt_gerar"
-        app:layout_constraintStart_toStartOf="@+id/bt_gerar"
-        app:layout_constraintTop_toBottomOf="@+id/bt_gerar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
