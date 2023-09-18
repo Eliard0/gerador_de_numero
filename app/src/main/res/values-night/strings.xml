@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="gerar_numero">Sortear Número</string>
-    <string name="sortear_numero">Sortear 1 número</string>
+    <string name="sortear_numero">Sortear número</string>
     <string name="parabens">Parabéns</string>
     <string name="frase_numero_sorteado">O número sorteado foi:</string>
     <string name="instrucao_um">O segundo número não pode ser menor ou igual o primeiro</string>

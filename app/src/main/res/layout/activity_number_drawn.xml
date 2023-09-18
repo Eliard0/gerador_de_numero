@@ -7,18 +7,28 @@
     android:background="@color/colorBase"
     tools:context=".NumberDrawn">
 
+    <ImageView
+        android:id="@+id/iv_volta"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_volta" />
 
     <TextView
         android:id="@+id/tvParabens"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="@string/parabens"
         android:textAlignment="center"
         android:textAllCaps="false"
+        android:textColor="@color/black"
         android:textSize="35sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,12 +38,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="@string/frase_numero_sorteado"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textSize="35sp"
-        android:textStyle="bold"
         android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvParabens" />
@@ -51,4 +62,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFrase" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
