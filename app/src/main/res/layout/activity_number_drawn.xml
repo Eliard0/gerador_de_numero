@@ -13,6 +13,7 @@
         android:layout_height="34dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/bt_voltar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_volta" />
@@ -53,12 +54,12 @@
         android:id="@+id/tvNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="99"
+        android:text="@string/ex_numero"
         android:textAlignment="center"
         android:textAllCaps="false"
+        android:textColor="@color/black"
         android:textSize="130sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFrase" />

@@ -6,4 +6,12 @@
     <string name="frase_numero_sorteado">O número sorteado foi:</string>
     <string name="instrucao_um">O segundo número não pode ser menor ou igual o primeiro</string>
     <string name="instrucao_dois">Digite os dois números</string>
+    <string name="ate">Ate</string>
+    <string name="de">De</string>
+    <string name="bem_vindo_a">Bem Vindo(a)</string>
+    <string name="ao">Ao</string>
+    <string name="gerador_de_numeros">Gerador de Números</string>
+    <string name="bt_entrar">Entrar</string>
+    <string name="ex_numero">99</string>
+    <string name="bt_voltar">Voltar</string>
 </resources>
